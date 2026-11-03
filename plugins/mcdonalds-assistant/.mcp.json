@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "mcdonalds": {
+      "type": "http",
+      "url": "https://mcd-mcp.keldos.chatgpt.site/api/mcd-mcp"
+    }
+  }
+}
