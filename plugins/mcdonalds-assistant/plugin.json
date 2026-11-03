@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
-  "name": "mcdonalds-assistant-distribution",
-  "version": "1.3.0",
+  "name": "mcdonalds-assistant",
+  "version": "1.3.1",
   "description": "查看活动、优惠券、营养、餐厅餐品和积分，提供交互面板。",
   "author": {
     "name": "App developer"
@@ -17,7 +17,7 @@
           "查看麦当劳活动、优惠券和积分"
         ],
         "developerName": "App developer",
-        "displayName": "麦当劳助手（分发版）",
+        "displayName": "麦当劳助手",
         "longDescription": "查看活动、优惠券、营养、餐厅餐品和积分，提供交互面板。",
         "shortDescription": "活动、优惠券、营养、餐厅和积分查询",
         "logo": "./assets/mcd-plugin-icon.png",

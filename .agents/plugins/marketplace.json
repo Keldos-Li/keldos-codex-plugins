@@ -5,10 +5,10 @@
   },
   "plugins": [
     {
-      "name": "mcdonalds-assistant-distribution",
+      "name": "mcdonalds-assistant",
       "source": {
         "source": "local",
-        "path": "./plugins/mcdonalds-assistant-distribution"
+        "path": "./plugins/mcdonalds-assistant"
       },
       "policy": {
         "installation": "AVAILABLE",
