@@ -1,0 +1,20 @@
+{
+  "name": "mcdonalds-plugins",
+  "interface": {
+    "displayName": "麦当劳插件"
+  },
+  "plugins": [
+    {
+      "name": "mcdonalds-assistant-distribution",
+      "source": {
+        "source": "local",
+        "path": "./plugins/mcdonalds-assistant-distribution"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Other"
+    }
+  ]
+}
