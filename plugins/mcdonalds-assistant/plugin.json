@@ -1,22 +1,22 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "mcdonalds-assistant",
-  "version": "1.3.1",
+  "version": "1.3.2",
   "description": "查看活动、优惠券、营养、餐厅餐品和积分，提供交互面板。",
   "author": {
-    "name": "App developer"
+    "name": "Keldos Li"
   },
   "extensions": {
     "com.openai": {
       "interface": {
         "capabilities": [],
-        "category": "Other",
+        "category": "Productivity",
         "defaultPrompt": [
           "打开麦当劳面板",
           "查找附近的麦当劳并搭配午餐",
           "查看麦当劳活动、优惠券和积分"
         ],
-        "developerName": "App developer",
+        "developerName": "Keldos Li",
         "displayName": "麦当劳助手",
         "longDescription": "查看活动、优惠券、营养、餐厅餐品和积分，提供交互面板。",
         "shortDescription": "活动、优惠券、营养、餐厅和积分查询",
