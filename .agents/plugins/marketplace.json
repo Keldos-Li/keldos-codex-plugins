@@ -1,7 +1,7 @@
 {
-  "name": "mcdonalds-plugins",
+  "name": "keldos-codex-plugins",
   "interface": {
-    "displayName": "麦当劳插件"
+    "displayName": "Keldos Codex Plugins"
   },
   "plugins": [
     {

@@ -1,13 +1,13 @@
 {
   "name": "mcdonalds-assistant",
-  "version": "1.3.6",
+  "version": "1.3.7",
   "description": "查看活动、优惠券、营养、餐厅餐品和积分，提供交互面板。",
   "author": {
     "name": "Keldos Li",
     "url": "https://github.com/Keldos-Li"
   },
-  "homepage": "https://github.com/Keldos-Li/mcdonalds-plugins",
-  "repository": "https://github.com/Keldos-Li/mcdonalds-plugins",
+  "homepage": "https://github.com/Keldos-Li/keldos-codex-plugins/tree/main/plugins/mcdonalds-assistant",
+  "repository": "https://github.com/Keldos-Li/keldos-codex-plugins",
   "keywords": [
     "mcdonalds",
     "麦当劳",
@@ -35,8 +35,8 @@
     "shortDescription": "活动、优惠券、营养、餐厅和积分查询",
     "logo": "./assets/mcd-plugin-icon.png",
     "composerIcon": "./assets/mcd-plugin-icon.png",
-    "websiteURL": "https://github.com/Keldos-Li/mcdonalds-plugins",
-    "supportURL": "https://github.com/Keldos-Li/mcdonalds-plugins/issues"
+    "websiteURL": "https://github.com/Keldos-Li/keldos-codex-plugins/tree/main/plugins/mcdonalds-assistant",
+    "supportURL": "https://github.com/Keldos-Li/keldos-codex-plugins/issues"
   },
   "mcpServers": "./.mcp.json",
   "skills": "./skills/"
