@@ -33,6 +33,28 @@
 
 3. 浏览器自动打开授权页。按提示连接，填写自己的麦当劳 MCP Token。可从[麦当劳 MCP 平台](https://open.mcd.cn/mcp)获取 Token。
 
+## 自定义 MCP 配置
+
+在 DuMate 的「连接应用 → 添加应用」中选择 Streamable HTTP，服务端点填写 `https://mcd-mcp.keldos.chatgpt.site/api/mcd-mcp`。请求头名称填写 `Authorization`，值填写 `McDonalds <麦当劳原始 Key>`。将占位符替换为自己从[麦当劳 MCP 平台](https://open.mcd.cn/mcp)获取的 Key，并保留 `McDonalds` 后的空格。
+
+DuMate 也可以通过「JSON 导入」添加同一个服务。
+
+```json
+{
+  "mcpServers": {
+    "mcdonalds-assistant": {
+      "url": "https://mcd-mcp.keldos.chatgpt.site/api/mcd-mcp",
+      "type": "streamableHttp",
+      "headers": {
+        "Authorization": "McDonalds <麦当劳原始 Key>"
+      }
+    }
+  }
+}
+```
+
+`initialize`、`tools/list` 和 `resources/list` 无需凭证。调用业务工具（`tools/call`）或读取 `ui://` 资源内容（`resources/read`）时，需要提供凭证。OAuth 客户端使用 `Authorization: Bearer <OAuth 访问凭证>`。
+
 ## 功能
 
 - 浏览活动：查看麦当劳近期营销活动与优惠信息。
@@ -43,6 +65,6 @@
 
 ## 账户连接
 
-服务加密保存使用者授权的麦当劳 MCP Token。可在[连接管理](https://mcd-mcp.keldos.chatgpt.site/oauth/connections)中解除授权并删除保存的 Token。
+通过 OAuth 连接时，服务加密保存使用者授权的麦当劳 MCP Token。可在[连接管理](https://mcd-mcp.keldos.chatgpt.site/oauth/connections)中解除授权并删除保存的 Token。
 
 目前，为了避免 AI 可能出现的问题，关停了真正的下单、支付和积分兑换功能（实际支持）。
